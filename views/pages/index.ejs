@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head', {title:index_data.title, description:index_data.description}) %>
+</head>
+  
+<body>
+<%- include('../partials/menu', {title:index_data.title}) %>
+
+<div class="content">
+  <%- include('../partials/header', {title:index_data.title}) %>
+
+  <div class="intro">
+    <%- index_data.intro %>
+  </div>
+
+  <br />
+
+  <img id="shivernet" src="images/shivernet.png" width="300px" />
+
+  <br />
+
+  <div class="featurebox">
+    <div>
+      <h3>Dynamic Site Generation</h3>
+      <p>
+        The Shivernet core functionality is built on a Node.js-based dynamic page generator designed for creating a decentralized network of personal sites organized in a shiver.
+      </p>
+    </div>
+    <div>
+      <h3>Community-Oriented Design</h3>
+      <p>
+        Every component is built around a community-centered mindset. The goal is to make it easier for you to create mutual connections digitally so you and your chosen family can thrive.
+      </p>
+    </div>
+    <div>
+      <h3>Anti-Imperialist Philosophy</h3>
+      <p>
+        Shivernet aims to use technologies that are not dependent on genocide-funding Big Tech corporations. In addition, the tools should be able to withstand political instability and help users weather the storm.
+      </p>
+    </div>
+  </div>
+
+  <br /><br />
+
+</div>
+    
+<%- include('../partials/footer') %>
+    
+</body>
+</html>

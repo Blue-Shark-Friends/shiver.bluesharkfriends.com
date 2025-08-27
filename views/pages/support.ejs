@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head', {title:support_data.title, description:support_data.description}) %>
+</head>
+<body>
+  <%- include('../partials/menu', {title:support_data.title}) %>
+
+<div class="content">
+  <%- include('../partials/header', {title:support_data.title, subheading: 'Support'}) %>
+Reach out to us at <%= branding_data.email %> if you have any questions.
+
+</div>
+
+<%- include('../partials/footer') %>
+
+</body>
+</html>

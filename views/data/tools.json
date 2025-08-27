@@ -1,0 +1,16 @@
+{
+    "title": "Tools",
+    "description": "About Blue Shark Friends and the co-founders, Hannah Parker and Josie Stewart. A company run by two disabled trans women to serve the transgender community. BIPOC led, Black led",
+    "about_tools": "These are the tools currently available in the Shivernet Toolkit:",
+    "tools":
+    [
+        {
+            "name": "Shiver Dock",
+            "repo_name": "shiver-dock",
+            "github_ref": "https://github.com/Blue-Shark-Friends/shiver-dock",
+            "description": "Shiver Dock generates single-page Node apps that act as personal sites.",
+            "img_src": "images/shiver-dock.jpg",
+            "img_alt": "Picture of Shiver Dock"
+        }
+    ]
+}

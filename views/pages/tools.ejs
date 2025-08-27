@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head', {title:tools_data.title, description:tools_data.description}) %>
+</head>
+<body>
+  <%- include('../partials/menu', {title:tools_data.title}) %>
+
+<div class="content subpage-content" style="display: flex; flex-direction: column;">
+  <%- include('../partials/header', {title:tools_data.title, subheading: 'Tools'}) %>
+<div style="text-align: left">
+  <% tools_data.about_tools.split("\n").forEach(element => { %>
+    <%= element %>
+    <br />
+  <% }); %>
+  <br />
+</div>
+
+<% tools_data.tools.forEach(member => { %>
+  <div>
+    <h3><%= member.name %></h3>
+    <a href="<%= member.github_ref %>"><h4 class="repo"><%= member.repo_name %></h4></a>
+    <img class="tools-img" src="<%= member.img_src %>" width="200px" height="<% if(member.name === "Shiver Dock"){ %>50px<% } else{ %>201px<% } %>" alt="<%= member.img_alt %>"/>
+    <div style="text-align: left;">
+      <% if(member.name === "Shiver Dock"){ %>
+        <%= member.description %>
+        <br /><br />
+      <% } else { %>
+        <% member.description.split("\n").forEach(element => { %>
+          <%= element %>
+          <br />
+        <% }); %>
+      <% } %>
+    </div>
+  </div>
+<% }); %>
+<br /><br />
+</div>
+
+<%- include('../partials/footer') %>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head', {title:resources_data.title, description:resources_data.description}) %>
+</head>
+<body>
+  <%- include('../partials/menu', {title:resources_data.title}) %>
+
+<div class="content resources subpage-content">
+  <%- include('../partials/header', {title:resources_data.title, subheading: 'Resources'}) %>
+  <div>
+    <h3>
+      - <a href="https://shiverguide.info">Shiverguide.info</a>
+    </h3>
+    <p>
+      Explains the Shiver Methodology.
+    </p>
+  </div>
+  <div>
+    <h3>
+      - <a href="https://shivernet.social">Shivernet.social</a>
+    </h3>
+    <p>
+      Introduces the Shivernet and acts as a landing page for organizing community.
+    </p>
+  </div>
+  <div>
+    <h3>
+      - <a href="https://harbor.shivernet.social">The Shivernet Harbor</a>
+    </h3>
+    <p>
+      A space for people in the process of building their shiver to list their personal sites.
+    </p>
+  </div>
+  <br />
+</div>
+
+  <%- include('../partials/footer') %>
+  
+</body>
+</html>
