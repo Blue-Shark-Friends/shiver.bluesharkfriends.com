@@ -1,7 +1,7 @@
 body {
-  background-color: #0D1D2A;
+  background-color: #1d334e;
   font-family: "Trebuchet MS", sans-serif;
-  color: white;
+  color: #fbf5f3;
   min-height: 97vh;
   display: flex;
   flex-direction: column;
@@ -87,17 +87,17 @@ h2 {
 }
 
 a {
-  color: #5BCEFA;
+  color: #a7cbf7;
   text-decoration: none;
   font-weight: bold;
 }
 
 a:visited {
-  color: #2B9EFA;
+  color: #6382a7;
 }
 
 a:hover {
-  color: #F5A9B8;
+  color: #de9151;
 }
 
 footer {
@@ -216,7 +216,7 @@ footer {
 }
 
 .resources h3 {
-  color: #dd526e;
+  color: #869d7a;
   margin-bottom: 5px;
 }
 
@@ -304,23 +304,23 @@ p.inline {
 }
 
 .menu-icon a {
-  color: white;
+  color: #fbf5f3;
   font-weight: normal;
 }
 
 .menu-icon a:visited {
-  color: white;
+  color: #fbf5f3;
 }
 
 .menu-icon a:hover {
-  color: white;
+  color: #fbf5f3;
 }
 
 .menu {
   margin-left: -10px;
   margin-top: 70px;
   position:fixed;
-  background-color: #0D1D2A;
+  background-color: #1d334e;
   padding-right: 20px;
   height: 100%;
   visibility: hidden;
