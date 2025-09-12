@@ -8,8 +8,15 @@
 
 <div class="content">
   <%- include('../partials/header', {title:support_data.title, subheading: 'Support'}) %>
-Reach out to us at <%= branding_data.email %> if you have any questions.
-
+  <div style="display:flex; flex-direction:column; align-items:center;">
+    <p>
+      If you're a developer, you can connect on the Blue Shark Friends <a href="https://github.com/orgs/Blue-Shark-Friends/discussions">GitHub Discussions page</a>.
+    </p>
+    <br />
+    <p>
+      For all other queries, feel free to reach out to us at <a href="mailto:<%= branding_data.email %>"><%= branding_data.email %></a> if you have any questions.
+    </p>
+  </div>
 </div>
 
 <%- include('../partials/footer') %>

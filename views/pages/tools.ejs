@@ -17,11 +17,15 @@
 </div>
 
 <% tools_data.tools.forEach(member => { %>
-  <div>
-    <h3><%= member.name %></h3>
-    <a href="<%= member.github_ref %>"><h4 class="repo"><%= member.repo_name %></h4></a>
-    <img class="tools-img" src="<%= member.img_src %>" width="200px" height="<% if(member.name === "Shiver Dock"){ %>50px<% } else{ %>201px<% } %>" alt="<%= member.img_alt %>"/>
-    <div style="text-align: left;">
+  <div class="tool">
+    <div class="tool-header">
+      <img class="tools-img" src="<%= member.img_src %>" width="50px" height="50px" alt="<%= member.img_alt %>"/>
+      <div class="tool-title">
+        <h3><%= member.name %></h3>
+        <a href="<%= member.github_ref %>"><h4 class="repo"><%= member.repo_name %>.git</h4></a>
+      </div>
+    </div>
+    <div>
       <% if(member.name === "Shiver Dock"){ %>
         <%= member.description %>
         <br /><br />
@@ -31,6 +35,10 @@
           <br />
         <% }); %>
       <% } %>
+      <div class="tool-download">
+        <button onclick="location.href='https://github.com/Blue-Shark-Friends/shiver-dock/archive/refs/tags/v0.0.1-alpha.zip';">Download latest release</button>
+        <span class="release"><small><%= member.name %> <%= member.latest_release %></small></span>
+      </div>
     </div>
   </div>
 <% }); %>

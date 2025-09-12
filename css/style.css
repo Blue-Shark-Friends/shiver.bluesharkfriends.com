@@ -224,14 +224,58 @@ footer {
   text-align: left;
 }
 
+.tool {
+  text-align: left;
+  background-color: #192738;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.tool-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.tool-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.tool-title h3 {
+  margin: 0;
+}
+
+.tool-title h4 {
+  margin: 0;
+}
+
 .repo {
-  margin-top: -1em;
   font-size: small;
 }
 
 .tools-img {
   float: left;
   padding-right: 10px;
+}
+
+.tool-download {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  gap: 1px;
+}
+
+.release {
+  font-family: 'Times New Roman', Times, serif;
+  color: gray;
+  text-align: center;
 }
 
 .cardlink {

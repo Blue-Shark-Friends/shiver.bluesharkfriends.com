@@ -9,8 +9,9 @@
             "repo_name": "shiver-dock",
             "github_ref": "https://github.com/Blue-Shark-Friends/shiver-dock",
             "description": "Shiver Dock generates single-page Node apps that act as personal sites.",
-            "img_src": "images/shiver-dock.jpg",
-            "img_alt": "Picture of Shiver Dock"
+            "img_src": "images/shiver-dock.png",
+            "img_alt": "Picture of Shiver Dock",
+            "latest_release": "0.0.1-alpha"
         }
     ]
 }
