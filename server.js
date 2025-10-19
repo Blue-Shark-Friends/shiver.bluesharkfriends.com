@@ -33,6 +33,10 @@ app.get('/support', function(req, res) {
     res.render('pages/support', {support_data: support_data, branding_data: branding_data});
 });
 
+app.get("/tools/shiver-dock/tutorial" , (req,res) => {
+	res.redirect(301, "https://home.bluesharkfriends.com/index.php/s/qPx9NqgndN4wJ26");
+});
+
 // end of pages
 
 app.listen(9001);
